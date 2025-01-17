@@ -114,4 +114,4 @@ predicted_labels=np.argmax(predictions,axis=1)
 
 results=pd.DataFrame({'Id': test['image_name'], 'label':predicted_labels})
 results['label']=results['label'].map(label_mapping)
-results.to_csv('ary_predictions.csv',header=True, index=False)
+results.to_csv('final_predict.csv',header=True, index=False)
